@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.game2048.GameController"
+            stylesheets="@game.css">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+            <HBox alignment="CENTER" spacing="20">
+                <Label fx:id="playerNameLabel" text="Игрок: " styleClass="info-label"/>
+                <Label fx:id="scoreLabel" text="Счет: 0" styleClass="info-label"/>
+                <Label fx:id="bestScoreLabel" text="Рекорд: 0" styleClass="info-label"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <StackPane styleClass="game-container">
+            <GridPane fx:id="gameGrid" onKeyPressed="#handleKeyPressed"/>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+            <Button fx:id="newGameButton" text="Новая игра" styleClass="control-button"/>
+            <Button fx:id="restartGame" text="Сброс поля" styleClass="control-button"/>
+        </HBox>
+    </bottom>
+</BorderPane>

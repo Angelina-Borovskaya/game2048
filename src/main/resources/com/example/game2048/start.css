@@ -1,0 +1,91 @@
+/* Основной стиль для VBox (корневого элемента) */
+.root {
+    -fx-background-color: #faf8ef;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+    -fx-border-color: #bbada0;
+}
+
+/* Стиль заголовка */
+.label.title {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #776e65;
+    -fx-padding: 0 0 20 0;
+}
+
+/* Стиль обычных текстовых меток */
+.label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #776e65;
+}
+
+/* Стиль текстового поля */
+.text-field {
+    -fx-font-size: 16px;
+    -fx-pref-width: 200px;
+    -fx-background-color: white;
+    -fx-border-color: #bbada0;
+    -fx-border-radius: 5;
+}
+
+/* Стиль выпадающего списка */
+.combo-box {
+    -fx-font-size: 16px;
+    -fx-pref-width: 100px;
+    -fx-background-color: white;
+    -fx-border-color: #bbada0;
+    -fx-text-fill: #776e65
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f99267;
+    -fx-text-fill: white;
+}
+
+/* Стиль кнопки */
+.button {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 200px;
+    -fx-background-color: #f99267;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-transition: -fx-background-color 0.3s;
+}
+
+.button:hover {
+    -fx-background-color: #f67c5f;
+}
+
+.button:pressed {
+    -fx-background-color: #f65e3b;
+}
+
+.control-button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #8f7a66;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-transition: -fx-background-color 0.3s;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.control-button:hover {
+    -fx-background-color: #9f8b77;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.game2048.StartController"
+      stylesheets="@start.css">
+
+    <Label text="Игра 2048" styleClass="title"/>
+    <Label text="Введите ваше имя:"/>
+    <TextField fx:id="playerNameField"/>
+    <Label text="Выберите размер сетки:"/>
+    <ComboBox fx:id="gridSizeComboBox"/>
+    <Button text="Начать игру" onAction="#handleStartGame"/>
+
+    <HBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+            <Button fx:id="exitButton" text="Выход" styleClass="control-button"/>
+    </HBox>
+
+</VBox>

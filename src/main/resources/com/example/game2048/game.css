@@ -1,0 +1,130 @@
+
+.root {
+    -fx-background-color: #faf8ef;
+    -fx-padding: 20px;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-alignment: center;
+}
+
+.game-container {
+    -fx-background-color: #bbada0;
+    -fx-padding: 15px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-max-width: 450px;
+    -fx-max-height: 450px;
+    -fx-min-width: 450px;
+    -fx-min-height: 450px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+#gameGrid {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-alignment: center;
+}
+
+.game-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #776e65;
+    -fx-padding: 0 0 10px 0;
+}
+
+.info-label {
+    -fx-letter-spacing: 0.5px;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-background-color: rgba(0,0,0,0.1);
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-min-width: 120px;
+    -fx-alignment: center-left;
+}
+
+#scoreLabel, #bestScoreLabel {
+    -fx-font-weight: bold;
+    -fx-text-overrun: clip;
+    -fx-ellipsis-string: "";
+}
+
+.control-button {
+    -fx-letter-spacing: 0.5px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #8f7a66;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-transition: -fx-background-color 0.3s;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.control-button:hover {
+    -fx-background-color: #9f8b77;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+}
+
+.game-tile {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: #bbada0;
+    -fx-alignment: center;
+    -fx-background-color: #cdc1b4;
+}
+
+.tile-text {
+    -fx-font-weight: bold;
+    -fx-text-fill: #776e65;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
+.tile-2    { -fx-background-color: #f6eedb; }
+.tile-4    { -fx-background-color: #ece0c6; }
+.tile-8    { -fx-background-color: #f0b27d; -fx-text-fill: #f9f6f2; }
+.tile-16   { -fx-background-color: #f0ca6b; -fx-text-fill: #f9f6f2; }
+.tile-32   { -fx-background-color: #f67963; -fx-text-fill: #f9f6f2; }
+.tile-64   { -fx-background-color: #f65e3e; -fx-text-fill: #f9f6f2; }
+.tile-128  { -fx-background-color: #f99267; -fx-text-fill: #f9f6f2; }
+.tile-256  { -fx-background-color: #eecc60; -fx-text-fill: #f9f6f2; }
+.tile-512  { -fx-background-color: #ebc540; -fx-text-fill: #f9f6f2; }
+.tile-1024 { -fx-background-color: #efc049; -fx-text-fill: #f9f6f2; }
+.tile-2048 { -fx-background-color: #ecc029; -fx-text-fill: #f9f6f2; }
+.tile-4096 { -fx-background-color: #f5656e; -fx-text-fill: #f9f6f2; }
+.tile-8192 { -fx-background-color: #ed4d5a; -fx-text-fill: #f9f6f2; }
+.tile-16384 { -fx-background-color: #dd4738; -fx-text-fill: #f9f6f2; }
+.tile-32768 { -fx-background-color: #74b2d7; -fx-text-fill: #f9f6f2; }
+.tile-65536 { -fx-background-color: #61a0dd; -fx-text-fill: #f9f6f2; }
+.tile-131072 { -fx-background-color: #0886c3; -fx-text-fill: #f9f6f2; }
+
+.control-panel {
+    -fx-padding: 15px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}
+
+.tile-128, .tile-256, .tile-512 {
+    -fx-font-size: 35px;
+}
+
+.tile-1024, .tile-2048 {
+    -fx-font-size: 30px;
+}
+
+.tile-4096, .tile-8192 {
+    -fx-font-size: 25px;
+}
+
+.tile-16384, .tile-32768, .tile-65536 {
+    -fx-font-size: 20px;
+}
+
+.tile-131072 {
+    -fx-font-size: 15px;
+}
